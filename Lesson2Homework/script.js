@@ -10,6 +10,8 @@ let indexedLast = animals.slice(-1);
 console.log(indexedLast);
 
 
+
+
 let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
 let o = ["th", "st", "nd", "rd"]
 
@@ -26,7 +28,20 @@ let thirdO = o[3];
 console.log("3" + thirdO + " choice is " + thirdColor);
 
 
-let person = {
+
+
+let student = {
     sakheli: "mate",
     gvari: "gotua"
 };
+
+student.age = 24;
+console.log(student);
+
+delete student.age;
+console.log(student);
+
+[student.sakheli, student.gvari] = [student.gvari, student.sakheli];
+console.log(student);
+
+
