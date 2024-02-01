@@ -130,10 +130,24 @@ alert(capitalizeFirstLetter(word));
 
 
 // 9.შექმენით ფუნქცია, რომელიც მასზე მიწოდებულ სტრიქონს გადააქცევს მასივად. მაგ. stringToArray(testString) => თუ მივაწვდით სტრიქონს “Hello, World” => გამოიტანს მის ვერსიას მასივში. [“Hello”, “World”]
-
-
-
+let testString = prompt("Write a sentence");
+function stringToArray(testString) {
+    return testString.split(" ",);
+}
+alert(stringToArray(testString));
 
 
 // 10.შექმენით ერთგვარი ემაილის დამცველი ფუნქცია, რომლის ფუნქციონალი მდგომარეობს შემდგომში: მომხმარებელი გაწვდის ემაილს წერტილით გამოყოფილ თავისი სახელით და გვარით, beqa.beqauri@gmail.com, თქვენი ფუნქცია კი გამოიტანს მის დაცულ ვერსიას ამ ფორმით:  beqa……..@gmail.com.
 // წერტილების ოდენობა უნდა ემთხვეოდეს გვარის სიგრძეს.
+let mail = prompt("Enter your mail");
+let indexOfDot = mail.indexOf(".");
+let indexOfAt = mail.indexOf("@")
+let textBeforeDot = mail.substring(0,indexOfDot);
+let textAfterAt = mail.substring(indexOfAt);
+let fromDotToAt = mail.substring(indexOfDot,indexOfAt);
+let hidden = fromDotToAt.replace(fromDotToAt,".").repeat(fromDotToAt.length);
+let result = (textBeforeDot + hidden + textAfterAt);  
+alert(result);
+
+
+
