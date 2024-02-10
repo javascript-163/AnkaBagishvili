@@ -14,8 +14,7 @@ class Circle extends Shape {
     this.radius = radius;
   }
   area() {
-    console.log(`Area of the ${this.name} is ${Math.PI * this.radius * 2}`);
-    // return `Area of the ${this.name} is ${Math.PI * this.radius * 2}`;
+    return `Area of the ${this.name} is ${Math.PI * this.radius * 2}`;
   }
 }
 
@@ -27,8 +26,7 @@ class Rectangle extends Shape {
     this.height = height;
   }
   area() {
-    console.log(`Area of the ${this.name} is ${this.width * this.height}`);
-    // return `Area of the ${this.name} is ${this.width * this.height}`;
+    return `Area of the ${this.name} is ${this.width * this.height}`;
   }
 }
 
@@ -40,8 +38,7 @@ class Triangle extends Shape {
     this.height = height;
   }
   area() {
-    console.log(`Area of the ${this.name} is ${(this.base * this.height) / 2}`);
-    // return `Area of the ${this.name} is ${(this.base * this.height) / 2}`;
+    return `Area of the ${this.name} is ${(this.base * this.height) / 2}`;
   }
 }
 
@@ -49,11 +46,6 @@ let circle = new Circle("Circle", 2);
 let rectangle = new Rectangle("Rectangle", 10, 5);
 let triangle = new Triangle("Triangle", 10, 2);
 
-// console.log(circle.area());
-// console.log(rectangle.area());
-// console.log(triangle.area());    
-
-circle.area();
-rectangle.area();
-triangle.area();
-
+console.log(circle.area());
+console.log(rectangle.area());
+console.log(triangle.area());    
