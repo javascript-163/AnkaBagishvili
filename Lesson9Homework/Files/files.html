@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Files/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>File reader</h1>
+    <section class="section1">
+      <p>Upload text file:</p>
+      <input id="textFileUpload" type="file" accept=".txt" />
+
+      <button value="Read file " onclick="getFileContent()" id="readButton">
+        Read File
+      </button>
+    </section>
+
+    <h3>File Content</h3>
+
+    <textarea id="fileContent">
+
+    </textarea>
+
+    <script
+      type="text/javascript"
+      src="../Files/scripts/filesScript.js"
+    ></script>
+  </body>
+</html>

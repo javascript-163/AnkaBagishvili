@@ -1,0 +1,15 @@
+body {
+  margin: 100px;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  column-gap: 20px;
+}
+
+textarea {
+  border: 2px solid black;
+  width: 1500px;
+  height: 500px;
+}
