@@ -11,7 +11,7 @@
 
 function getFileContent() {
   return new Promise(() => {
-    let textFileUpload = document.getElementById(`textFileUpload`);
+    let textFileUpload = document.getElementById("textFileUpload");
     console.log(textFileUpload.files[0]);
     let file = textFileUpload.files[0];
     if (file) {

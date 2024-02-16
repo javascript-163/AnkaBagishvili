@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Lesson9Homework/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TxtFiles -->
+    <h1>File reader</h1>
+    <section class="section1">
+      <p>Upload text file:</p>
+      <input id="textFileUpload" type="file" accept=".txt" />
+      <button value="Read file " onclick="getFileContent()" id="readButton">
+        Read File
+      </button>
+    </section>
+    <h3>File Content</h3>
+    <textarea id="fileContent"> </textarea>
+    <!-- Images -->
+    <h1>Image</h1>
+    <section class="section1">
+      <p>Upload image</p>
+      <input id="imageUpload" type="file" accept="image/*" />
+      <button value="Open image" onclick="getImage()" id="loadImageButton">
+        Open image
+      </button>
+    </section>
+    <img id="imageContent" src="" alt="UploadedImage" style="display: none" />
+    <!-- Videos -->
+    <h1>Video</h1>
+    <section class="section1">
+      <p>Upload Video</p>
+      <input type="file" id="videoUpload" accept="video/*" />
+      <button value="Open Video" onclick="getVideo()">Open Video</button>
+    </section>
+    <video
+    onclick="playVideo()"
+      id="videoContent"
+      src=""
+      alt="UploadedVideo"
+      style="display: none"
+    ></video>
+    <script
+      type="text/javascript"
+      src="/Lesson9Homework/allFiles/scripts/allFiles.js"></script>
+  </body>
+</html>
