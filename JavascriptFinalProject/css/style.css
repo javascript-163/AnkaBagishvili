@@ -1,0 +1,107 @@
+.container {
+  width: min(100%, 1440px);
+  margin: auto;
+  padding-top: 93px;
+  background-color: black;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  max-width: inherit;
+  width: inherit;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 90px;
+  background-color: black;
+  align-items: center;
+}
+.headerUl,
+.footerUl {
+  display: flex;
+  column-gap: 50px;
+}
+.MercedesLogo {
+  width: 50px;
+  height: 50px;
+}
+.headerText,
+.footerTxt {
+  font-size: 15px;
+  color: rgb(113, 113, 113);
+  border: none;
+  background-color: black;
+}
+
+/* Section1Slider */
+.sliderSection {
+  display: flex;
+}
+.sliderPicture {
+  width: 1440px;
+  height: 650px;
+}
+
+/* Section2 */
+.section2 {
+  padding: 96px 94px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  /* cursor: url(//JavascriptFinalProject/images/readmorelogo.webp); */
+}
+.section2_Title {
+  color: rgb(113, 113, 113);
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: overline underline;
+  text-decoration-thickness: 2px;
+}
+.section2_cards {
+  display: flex;
+  column-gap: 40px;
+}
+.section2_card {
+  border: 2px solid rgb(113, 113, 113);
+  width: 500px;
+  height: 500px;
+}
+.section2_img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+}
+.section2_card_title {
+  color: rgb(113, 113, 113);
+  font-weight: bold;
+  padding: 10px 0 0 5px;
+}
+
+.section2_card:hover {
+  box-shadow: 0px 0px 8px 4px rgb(113, 113, 113);
+}
+
+/* Footer */
+footer {
+  padding: 64px 92px;
+}
+.footerUl {
+  justify-content: center;
+}
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-top: 45px;
+}
+
+.footerLogoText {
+  color: white;
+  font-size: 30px;
+}
