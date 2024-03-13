@@ -92,6 +92,8 @@ footer {
 }
 .footerUl {
   justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .logoDiv {
   display: flex;
@@ -104,4 +106,46 @@ footer {
 .footerLogoText {
   color: white;
   font-size: 30px;
+}
+/* About */
+/* Section1 */
+.aboutUsSection1{
+  padding-bottom: 20px;
+}
+.aboutUsContent{
+  display: flex;
+  justify-content:space-around;
+}
+.aboutUsTxt{
+  color: white;
+  width: 450px;
+  padding-top: 20px;
+}
+
+.youtubeVideo{
+  width: 600px;
+  height: 300px;
+}
+/* Section2 */
+.aboutUsSection2{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  background-color: white;
+}
+.section2Title{
+  color:black;
+  font-size: 50px;
+}
+
+.followUsBox{
+  display: flex;
+  column-gap: 25px;
+}
+.fa-brands{
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
 }
