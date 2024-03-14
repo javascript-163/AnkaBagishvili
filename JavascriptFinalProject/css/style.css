@@ -109,25 +109,25 @@ footer {
 }
 /* About */
 /* Section1 */
-.aboutUsSection1{
+.aboutUsSection1 {
   padding-bottom: 20px;
 }
-.aboutUsContent{
+.aboutUsContent {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-.aboutUsTxt{
+.aboutUsTxt {
   color: white;
   width: 450px;
   padding-top: 20px;
 }
 
-.youtubeVideo{
+.youtubeVideo {
   width: 600px;
   height: 300px;
 }
 /* Section2 */
-.aboutUsSection2{
+.aboutUsSection2 {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -135,16 +135,16 @@ footer {
   row-gap: 30px;
   background-color: white;
 }
-.section2Title{
-  color:black;
+.section2Title {
+  color: black;
   font-size: 50px;
 }
 
-.followUsBox{
+.followUsBox {
   display: flex;
   column-gap: 25px;
 }
-.fa-brands{
+.fa-brands {
   color: black;
   font-size: 35px;
   cursor: pointer;

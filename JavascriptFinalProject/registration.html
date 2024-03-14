@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/landing.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="landingDiv">
+        <img
+          class="MercedesLogoLanding"
+          src="images/Mercedes-Logo.svg.png"
+          alt="Mercedes-Logo"
+        />
+        <section class="registrationSection">
+            <h2 class="registrationTitle">Create Account</h2>
+          <form class="registrationForm">
+            <input type="text" id="firstName" placeholder="Enter your Name">
+            <input type="text" id="lastName" placeholder="Enter your Lastname">
+            <input type="text" id="username" placeholder="Enter your Username">
+            <input type="text" id="password" placeholder="Enter your Password">
+            <button class="registrationButton" type="submit" onclick="registerAcc()">Register</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
