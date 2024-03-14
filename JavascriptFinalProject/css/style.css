@@ -81,7 +81,12 @@ header {
   font-weight: bold;
   padding: 10px 0 0 5px;
 }
-
+.indexReadMore {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
 .section2_card:hover {
   box-shadow: 0px 0px 8px 4px rgb(113, 113, 113);
 }
@@ -109,25 +114,35 @@ footer {
 }
 /* About */
 /* Section1 */
-.aboutUsSection1 {
-  padding-bottom: 20px;
-}
-.aboutUsContent {
+.aboutUsContent,
+.foundersDiv {
   display: flex;
   justify-content: space-around;
 }
-.aboutUsTxt {
+.aboutUsTxt,
+.foundersTxt,
+.aboutUsReadMore {
   color: white;
   width: 450px;
   padding-top: 20px;
 }
 
-.youtubeVideo {
+.youtubeVideo,
+.foundersImg {
   width: 600px;
-  height: 300px;
+  height: 400px;
 }
 /* Section2 */
 .aboutUsSection2 {
+  padding: 50px 0;
+}
+.aboutUsReadMore {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Section3 */
+.aboutUsSection3 {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -135,7 +150,7 @@ footer {
   row-gap: 30px;
   background-color: white;
 }
-.section2Title {
+.section3Title {
   color: black;
   font-size: 50px;
 }
@@ -148,4 +163,41 @@ footer {
   color: black;
   font-size: 35px;
   cursor: pointer;
+}
+
+/* AbousUsReadMore */
+/* Section1 */
+.aboutReadMoreSection1 {
+  background-image: url(/JavascriptFinalProject/images/backgroundimg.avif);
+  height: 675px;
+}
+.aboutReadMoreSection1Title {
+  font-size: 55px;
+  padding: 20px 0 0 20px;
+}
+/* Section2 */
+.aboutReadMoreSection2 {
+  padding: 20px 20px;
+}
+.aboutReadMoreSection2,
+.textDiv {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 60px;
+}
+.aboutReadMoreSection2Title,
+.textDivTxt1,
+.textDivTxt2 {
+  color: white;
+  width: 400px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+.aboutReadMoreSection2Title {
+  font-size: 30px;
+}
+.founder1 {
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
 }
