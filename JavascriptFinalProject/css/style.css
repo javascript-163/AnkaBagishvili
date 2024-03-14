@@ -112,6 +112,57 @@ footer {
   color: white;
   font-size: 30px;
 }
+/* ReadMorePages */
+.manualSliderTitles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.manualSliderTitle1,
+.manualSliderTitle2 {
+  color: rgb(113, 113, 113);
+}
+.manualSliderTitle1 {
+  font-size: 40px;
+}
+.manualSliderTitle2 {
+  font-size: 30px;
+  padding-left: 30px;
+}
+.manualSlider {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.manualSliderPic {
+  width: 800px;
+  height: 700px;
+  margin-inline: 350px;
+}
+.manualSliderCaption {
+  color: white;
+  font-size: 25px;
+  width: 600px;
+  margin-inline: 450px;
+  margin-top: 30px;
+}
+.buttonsDiv {
+  display: flex;
+  justify-content: space-around;
+}
+#Next,
+#Previous {
+  font-size: 20px;
+  background-color: rgb(113, 113, 113);
+  border: 2px solid rgb(113, 113, 113);
+  border-radius: 5px;
+  color: black;
+}
+
 /* About */
 /* Section1 */
 .aboutUsContent,

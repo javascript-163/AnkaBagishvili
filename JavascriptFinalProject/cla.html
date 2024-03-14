@@ -1,17 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/cd654bc798.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/cd654bc798.js" crossorigin="anonymous"></script>
     <title>Document</title>
-  </head>
-  <body>
-    <div class="container"></div>
-  </body>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <nav class="headerNav">
+                <ul class="headerUl">
+                    <li class="headerLi">
+                        <a class="headerText" href="">Provider</a>
+                    </li>
+                    <li class="headerLi">
+                        <a class="headerText" href="">Privacy</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <a href="index.html">
+                <img class="MercedesLogo" src="images/Mercedes-Logo.svg.png" alt="Mercedes-Logo" />
+            </a>
+            <nav class="headerNav">
+                <ul class="headerUl">
+                    <li class="headerLi">
+                    <li class="headerLi">
+                        <a class="headerText" href="">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        </a>
+                    </li>
+                    <a class="headerText" href="about.html"> About Us </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ManualSlider -->
+        <div class="manualSliderTitles">
+        <h1 class="manualSliderTitle1" >Spotlight
+            on
+            Innovation.</h1>
+        <h2 class="manualSliderTitle2">Concept CLA Class takes center stage at IAA Mobility 2023</h2>
+    </div>
+        <section class="manualSlider">
+            <figure class="manualSliderPics">
+                <img class="manualSliderPic" src="images/cla1.avif" alt="cla1" />
+                <figcaption class="manualSliderCaption">
+                    Step into the spotlight. The Concept CLA Class' striking front LED
+                    lights, featuring an innovative animated star pattern and low-energy
+                    LED technology, elevate the car's design to new heights.
+                </figcaption>
+            </figure>
+            <figure class="manualSliderPics">
+                <img class="manualSliderPic" src="images/cla2.avif" alt="cla2" />
+                <figcaption class="manualSliderCaption">
+                    Unveiling the Striking Exterior of the Concept CLA Class.
+                    Introducing the Concept CLA Class – where aesthetics blend with
+                    masterful engineering. A graceful wheelbase, refined proportions,
+                    panoramic windows, and a signature shark-nose front-end design merge
+                    to form a captivating symbol of contemporary design in motion.
+                </figcaption>
+            </figure>
+            <figure class="manualSliderPics">
+                <img class="manualSliderPic" src="images/cla3.avif" alt="cla3" />
+                <figcaption class="manualSliderCaption">
+                    Forged in Innovation. Crafted with precision, the Concept CLA Class
+                    embraces cutting-edge materials and a sleek glasshouse with chrome
+                    applications. A masterpiece pushing boundaries and setting new
+                    standards in performance and style, while delivering a captivating
+                    and innovative design.
+                </figcaption>
+            </figure>
+            <figure class="manualSliderPics">
+                <img class="manualSliderPic" src="images/cla4.avif" alt="cla4" />
+                <figcaption class="manualSliderCaption">
+                    Harmonising Form and Precision. The allure of the Concept CLA Class
+                    lies in its precise design and functionality, crafting an
+                    exceptional customer experience. Elegance meets innovation, setting
+                    a new standard in design.
+                </figcaption>
+            </figure>
+            <figure class="manualSliderPics">
+                <img class="manualSliderPic" src="images/cla5.webp" alt="cla5" />
+                <figcaption class="manualSliderCaption">
+                    Elevating Iconic Elements. The Concept CLA Class features powerful
+                    wheel arches embracing distinctive 21-inch wheels, adorned with a
+                    captivating star pattern. These design elements capture attention
+                    and contribute to the customer experience.
+                </figcaption>
+            </figure>
+            <div class="buttonsDiv">
+                <button id="Next" onclick="moveSlide(1)">Next</button>
+                <button id="Previous" onclick="moveSlide(-1)">Previous</button>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <nav class="footerNav">
+                <ul class="footerUl">
+                    <li class="footerLi">
+                        <button class="footerTxt">Provider</button>
+                    </li>
+                    <li class="footerLi">
+                        <button class="footerTxt">Legal Notice</button>
+                    </li>
+                    <li class="footerLi">
+                        <button class="footerTxt">Privacy</button>
+                    </li>
+                    <li class="footerLi">
+                        <a href="" class="footerTxt">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logoDiv">
+                <a href="index.html">
+                    <img class="MercedesLogo" src="images/Mercedes-Logo.svg.png" alt="Mercedes-Logo" />
+                </a>
+                <a href="index.html">
+                    <h1 class="footerLogoText">Mercedes-Benz</h1>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts/manualSlider.js"></script>
+</body>
+
 </html>
