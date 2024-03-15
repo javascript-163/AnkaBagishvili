@@ -56,7 +56,7 @@
 
 /* SignIn */
 .verificationForm,
-.registrationForm {
+#registrationForm {
   display: flex;
   align-items: center;
   text-align: center;
@@ -65,7 +65,7 @@
 }
 
 #username,
-#password,
+#Password,
 #firstName,
 #lastName,
 .signInButton,

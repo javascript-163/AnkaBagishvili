@@ -267,3 +267,56 @@ footer {
   height: 300px;
   margin-top: 50px;
 }
+#burgerMenuInfo {
+  display: none;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.burgerMenuInfoTxt {
+  color: red;
+  background-color: black;
+  font-size: 15px;
+}
+/* Contact */
+.contactSection1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.contactSection1Titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: center;
+  padding-top: 25px;
+}
+.contactTitle {
+  color: rgb(116, 116, 116);
+  font-size: 25px;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+#contactName,
+#contactLastName,
+#contactAge,
+#contactGender,
+#contactCountry,
+#contactCity,
+#contactSubmit {
+  border: 2px solid rgb(113, 113, 113);
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#contactSubmit:active {
+  color: gray;
+}
