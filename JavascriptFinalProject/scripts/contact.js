@@ -28,7 +28,7 @@ function handleSubmit(event) {
       cityInput.value = cities.join(", ");
     })
     .catch((error) => {
-      console.log("There was a problem fetching cities data:", error);
+      console.log("Error", error);
     });
 }
 

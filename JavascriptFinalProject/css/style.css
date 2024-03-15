@@ -320,3 +320,19 @@ footer {
 #contactSubmit:active {
   color: gray;
 }
+
+/* Catalog */
+.catalogSection {
+  /* background-image: url(../images/maroon1.jpg); */
+  /* background-repeat: no-repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.catalogSectionTitle {
+  color: rgb(113, 113, 113);
+  font-weight: bold;
+  font-size: 25px;
+
+}
