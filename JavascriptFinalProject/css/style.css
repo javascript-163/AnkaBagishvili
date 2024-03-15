@@ -46,7 +46,8 @@ header {
 }
 
 /* Section2 */
-.section2 {
+.section2,
+.indexSection3 {
   padding: 96px 94px;
   background-color: black;
   display: flex;
@@ -64,7 +65,7 @@ header {
 }
 .section2_cards {
   display: flex;
-  column-gap: 40px;
+  justify-content: space-around;
 }
 .section2_card {
   border: 2px solid rgb(113, 113, 113);
@@ -72,8 +73,8 @@ header {
   height: 500px;
 }
 .section2_img {
-  width: 400px;
-  height: 450px;
+  width: 100%;
+  height: 90%;
   object-fit: cover;
 }
 .section2_card_title {
@@ -90,7 +91,15 @@ header {
 .section2_card:hover {
   box-shadow: 0px 0px 8px 4px rgb(113, 113, 113);
 }
-
+/* Section3 */
+.cardTxt {
+  color: rgb(113, 113, 113);
+  width: 500px;
+  font-size: 18px;
+}
+.cardTxt:hover {
+  text-decoration: underline;
+}
 /* Footer */
 footer {
   padding: 64px 92px;
@@ -161,6 +170,12 @@ footer {
   border: 2px solid rgb(113, 113, 113);
   border-radius: 5px;
   color: black;
+}
+
+.s2 {
+  width: 1200px;
+  height: 700px;
+  margin-left: 150px;
 }
 
 /* About */
