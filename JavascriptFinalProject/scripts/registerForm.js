@@ -6,31 +6,52 @@ function handleRegistration() {
   let regForm = document.getElementById("registerForm");
   let errorMessage = document.getElementById("error");
 
-  let oldUsersData = localStorage.getItem("usersData");
-  oldUsersData = JSON.parse(oldUsersData);
+  let firstNameRegex = /^[a-zA-Z'-]{1,30}$/;
+  let lastNameRegex = /^[a-zA-Z'-]{1,30}$/;
+  let userNameRegex = /^[a-zA-Z0-9_]{3,20}$/;
+  let passwordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>])[A-Za-z\d!@#$%^&*()\-_=+{};:,<.>.]{8,}$/;
 
-  let user = {
-    firstName: firstName,
-    lastName: lastName,
-    username: username,
-    password: password,
-  };
-
-  if (oldUsersData === null) {
-    localStorage.setItem("usersData", JSON.stringify([user]));
-  } else {
-    for (let user of oldUsersData) {
-      if (user.username === username) {
-        errorMessage.style.color = "red";
-        errorMessage.innerHTML = "This username is already used!";
-        regForm.addEventListener("submit", function (event) {
-          event.preventDefault();
-        });
-      } else {
-        oldUsersData.push(user);
-        localStorage.setItem("usersData", JSON.stringify(oldUsersData));
-      }
+  switch (false) {
+    case firstNameRegex.test(firstName):
+      errorMessage.innerHTML = "Enter valid First Name";
       break;
+    case lastNameRegex.test(lastName):
+      errorMessage.innerHTML = "Enter valid Last Name";
+      break;
+    case userNameRegex.test(username):
+      errorMessage.innerHTML = "Enter valid Username";
+      break;
+    case passwordRegex.test(password):
+      errorMessage.innerHTML = "Enter valid Password";
+      break;
+    default:
+      errorMessage.innerHTML = "";
+      break;
+  }
+  errorMessage.style.color = "red";
+  errorMessage.style.marginTop = "10px";
+
+  if (errorMessage.innerHTML === "") {
+    let oldUsersData = JSON.parse(localStorage.getItem("usersData")) || [];
+
+    let existingUser = oldUsersData.find((user) => user.username === username);
+    if (existingUser) {
+      errorMessage.innerHTML = "This username is already used!";
+    } else {
+      let user = {
+        firstName: firstName,
+        lastName: lastName,
+        username: username,
+        password: password,
+      };
+      oldUsersData.push(user);
+      localStorage.setItem("usersData", JSON.stringify(oldUsersData));
+      window.location.href = "signIn.html";
     }
   }
+
+  regForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
 }

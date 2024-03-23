@@ -69,7 +69,7 @@
 #firstName,
 #lastName,
 .signInButton,
-.registrationButton {
+#registrationButton {
   border: 2px solid rgb(113, 113, 113);
   border-radius: 5px;
   width: 250px;
@@ -100,4 +100,11 @@
   font-size: 25px;
   color: white;
   margin-bottom: 10px;
+}
+
+body {
+  font-family: "Comme", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }

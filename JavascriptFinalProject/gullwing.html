@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/Mercedes-Logo.svg.png">
 
@@ -14,33 +17,35 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <header>
-            <nav class="headerNav">
-              <ul class="headerUl">
-                <li class="headerLi">
-                  <a id="burgerMenu" class="headerText" >Provider/Privacy</a>
-                </li>
-                <li class="headerLi">
-                  <a href="signIn.html"><button class="headerText">SingIn</button></a>
-                </li>
-              </ul>
-            </nav>
-            <a href="index.html">
-              <img class="MercedesLogo" src="images/Mercedes-Logo.svg.png" alt="Mercedes-Logo" />
-            </a>
-            <nav class="headerNav">
-              <ul class="headerUl">
-                <li class="headerLi">
-                <li class="headerLi">
-                  <a class="headerText" href="catalog.html">Catalog</a>
-                </li>
-                <a class="headerText" href="about.html"> About Us </a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+         <!-- Header -->
+    <header>
+        <nav class="headerNav">
+          <ul class="headerUl">
+            <li class="headerLi">
+              <a id="burgerMenu" class="headerText" >Provider/Privacy</a>
+            </li>
+            <li class="footerLi">
+              <a href="contact.html" class="footerTxt">Contact</a>
+            </li>
+  
+          </ul>
+        </nav>
+        <a href="index.html">
+          <img class="MercedesLogo" src="images/Mercedes-Logo.svg.png" alt="Mercedes-Logo" />
+        </a>
+        <nav class="headerNav">
+          <ul class="headerUl">
+            <li class="headerLi">
+            <li class="headerLi">
+              <a class="headerText" href="catalog.html">Catalog</a>
+            </li>
+            <a class="headerText" href="about.html"> About Us </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
         <!-- Section1 -->
-        <!-- ManualSlider -->
+        <!-- Burger -->
         <div id="burgerMenuInfo">
             <p class="burgerMenuInfoTxt">Mercedes-Benz AG
               Mercedesstraße 120
@@ -71,6 +76,7 @@
               The addresses listed are examples and not Mercedes-Benz Classic recommendations.
               No liability is assumed for unsolicited manuscripts, photos and data carriers.</p>
                         </div>
+                        <!-- ManualSlider -->
         <div class="manualSliderTitles">
             <h1 class="manualSliderTitle1">Defining
                 Class
@@ -115,8 +121,8 @@
                 </figcaption>
             </figure>
             <div class="buttonsDiv">
-                <button id="Next" onclick="moveSlide(1)">Next</button>
-                <button id="Previous" onclick="moveSlide(-1)">Previous</button>
+                <button id="Next" onclick="moveSlide(1)">Previous</button>
+                <button id="Previous" onclick="moveSlide(-1)">Next</button>
             </div>
         </section>
         <!-- Footer -->
